@@ -1,4 +1,4 @@
-;INFO JUGADOR
+;INFO PLAYER
 (deftemplate jugador ;objetos del inventario
     (slot vacio(type SYMBOL)(allowed-symbols si no))
     (slot mapa(type SYMBOL)(allowed-symbols si no))
@@ -7,7 +7,7 @@
     (slot cerillas(type SYMBOL)(allowed-symbols si no))
 )
 
-;LISTADO DEL INVENTARIO
+;INVENTORY LIST
 (deftemplate lista
     (slot listado(type INTEGER)(range 0 4));0- vacio 1- Mapa, 2-linterna, 3-Llave, 4-cerillas,
     (slot lint_us(type SYMBOL)(allowed-symbols on off))
@@ -15,30 +15,30 @@
     (slot lla_us(type SYMBOL)(allowed-symbols si no))
 )
 
-;BLOQUEO PUERTA FINAL
+;FINAL DOOR BLOCK
 (deftemplate port_final
     (slot estado(type SYMBOL)(allowed-symbols abierta cerrada))
 )
 
-;BLOQUEO PANEL CONTROL
+;CONTROL PANEL BLOCK
 (deftemplate pan_cont
     (slot cristal(type SYMBOL)(allowed-symbols abierta cerrada))
 )
 
-;DEFINICION DE LAS HABITACIONES
+;ROOM DEFINITION
 (deftemplate habitacion
     (slot numero(type INTEGER));Numero de la habitacion
     (multislot num_port(type INTEGER)(range 1 10));Numero de las puertas que contiene
 )
 
-;DEFINICION DE ACCIONES
+;ACTION DEFINITION
 (deftemplate acciones
     (slot action(type INTEGER))
     (slot direccion(type INTEGER));A la que te quieres dirigir
 )
 
 
-;DEFINIMOS LA POSICION
+;POSITION DEFINITION
 (deftemplate posicion
     (slot pos(type INTEGER)(default 1))
 )
