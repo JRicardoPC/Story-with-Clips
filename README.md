@@ -1,12 +1,12 @@
-Historia Interactiva creada con CLIPS
+Interactive Story created with CLIPS
 
+To run it, only make this simple steps:
 
-Para ejecutarlo realizar los siguientes pasos:
-	- Tener instalado CLIPS
-	- Iniciar una terminal en la localizacion del archivo
-	- Ejecutar en la terminal Clips
-	- Una vez dentro:
-		- (load historia.clp)
+	- First, you need have install CLIPS
+	- Start a terminal in file directory
+	- Run it Clips
+	- And then write the commands in terminal:
+		- (load Story.clp)
 		- (reset)
 		- (run)
 	
